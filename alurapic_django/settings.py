@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
     'django_extensions',
 
-    'profiles'
+    'profiles',
+    'postagens',
 ]
 
 MIDDLEWARE = [
