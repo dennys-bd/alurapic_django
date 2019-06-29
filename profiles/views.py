@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from postagens.models import Post
 # from django.http import HttpResponse
 
 # def indice(request):
@@ -8,7 +9,9 @@ from django.shortcuts import render
 #     return HttpResponse('Nosso Detalhe! Perfil %d' % id)
 
 def indice(request):
-    return render(request, 'profiles/indice.html', {})
+    posts = Post.objects.all().order_by('-data_criacao')
+
+    return render(request, 'profiles/timeline.html', {'posts': posts})
 
 def meu_perfil(request):
     return render(request, 'profiles/timeline.html', {'perfil_id': request.user.id})

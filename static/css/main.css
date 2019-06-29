@@ -129,6 +129,16 @@ body {
     max-width: 100%;
   }
 
+  .foto .container {
+    background-color: #aaa;
+    /* min-width: 43px; */
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   /*****/
 
 
