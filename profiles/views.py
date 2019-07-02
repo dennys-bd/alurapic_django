@@ -13,8 +13,8 @@ def indice(request):
 
     return render(request, 'profiles/timeline.html', {'posts': posts})
 
-def meu_perfil(request):
-    return render(request, 'profiles/timeline.html', {'perfil_id': request.user.id})
+# def meu_perfil(request):
+#     return render(request, 'profiles/timeline.html', {'perfil_id': request.user.id})
 
-def detalhe(request, id):
-    return render(request, 'profiles/detalhe.html', {'perfil_id': id})
+# def detalhe(request, id):
+#     return render(request, 'profiles/detalhe.html', {'perfil_id': id})
